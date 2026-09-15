@@ -1,0 +1,66 @@
+/* Headers */
+#mission-heading {
+    font-family: "Trajan Pro", "Trajan", "Cinzel", serif;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 25px;
+    letter-spacing: 3px;
+}
+
+#BYU-I {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+    color: #035f90;
+}
+
+/* Content */
+
+#content {
+    margin-top: 50px;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: gray;
+    width: 70%;
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+
+/* List and Text Elements */
+
+#text {
+    width: 70%;
+    font-size: 25px;
+    margin: 0 auto;
+    line-height: 1.5em;
+}
+
+
+#italics {
+    font-style: italic;
+}
+
+.list {
+    list-style-type: decimal;
+}
+
+li {
+    margin-top: 25px;
+    padding-left: 10px;
+}
+
+/* Image */
+
+img {
+    width: 15%;
+    display: block;
+    margin: 50px auto;
+    padding-top: 50px;
+}
+
+
+
