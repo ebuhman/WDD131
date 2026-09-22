@@ -62,5 +62,29 @@ img {
     padding-top: 50px;
 }
 
+#container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+/* Dark Mode Logic */
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode #mission-heading,
+body.dark-mode #content,
+body.dark-mode #text,
+body.dark-mode .list {
+    color: white;
+}
+
+body.dark-mode #BYU-I
+{
+    color: lightblue;
+}
 
 
