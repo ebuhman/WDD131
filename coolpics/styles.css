@@ -24,6 +24,11 @@
     margin: 20px;
 }
 
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+}
+
 .menu {
     display: none;
     color: white;
@@ -70,3 +75,32 @@ footer {
         display: none;
     }
 }
+
+/* Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    padding: 1rem;
+}
+
+.close-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
