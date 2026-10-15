@@ -1,0 +1,90 @@
+/* Top Down Header to Nav*/
+
+h1 {
+    text-align: center;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+#nav-links a {
+    color: crimson;
+    margin: 20px;
+    text-decoration: none;
+}
+
+hr {
+    color: gold;
+    margin: auto;
+}
+
+#line-break {
+    margin-top: 50px;
+}
+
+/* Section and Article Styling */
+
+h2 {
+    color: crimson;
+}
+
+.book {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.description {
+    text-align: right;
+}
+
+img {
+    justify-self: center;
+}
+
+h2,
+.author {
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+    
+    .book {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: (3, 1fr);
+    }
+
+    .description {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        border-right: 2px solid gold;
+        padding-right: 20px;
+        text-align: right;
+
+    }
+
+    h2,
+    img,
+    .desc {
+        grid-column: 2/3;
+    }
+
+    h2,
+    .desc {
+        text-align: center;
+    }
+
+    img {
+
+        justify-self: center;
+    }
+
+    #line-break {
+        display: none;
+    }
+
+}
