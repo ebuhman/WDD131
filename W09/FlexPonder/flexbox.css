@@ -1,0 +1,58 @@
+
+* {
+box-sizing: border-box;
+}
+
+body {
+font-size: 20px;
+max-width: 1280px;
+margin: auto;
+padding: 1em;
+}
+
+img {
+max-width: 100%;
+}
+
+.main-nav {				
+display: flex;					
+justify-content: flex-end;
+gap: 20px 
+}
+
+main {
+display: flex;
+flex-wrap: wrap;
+gap: 50px;
+}
+        
+hr {
+margin-top: 50px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.media-card {
+    display: flex;
+}
+
+.gallery .media-card {
+  flex: 0 0 100%; /* one card per row by default */
+}
+
+
+@media screen and (min-width: 600px) {
+  .gallery .media-card {
+    flex: 0 0 600px;
+  }
+  
+  .media-card-image {
+    justify-content: right;
+    padding: 20px;
+  }
+}
+
+            
