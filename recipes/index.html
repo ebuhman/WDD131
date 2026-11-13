@@ -5,91 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Recipe Review</title>
-    <meta name="description"
-        content="Discover and review delicious recipes, including this simple apple crisp dessert.">
-
-    <!-- Open Graph -->
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Recipe Review">
-    <meta property="og:description" content="Discover and review delicious recipes.">
-    <meta property="og:url" content="https://example.com">
-    <meta property="og:image" content="https://example.com/social-preview-image.png">
+    <meta property="og:title" content="Your Title">
+    <meta property="og:description" content="Your Description">
+    <meta property="og:url" content="Your URL">
+    <meta property="og:image" content="social-preview-image.png">
 
-    <!-- X/Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Recipe Review">
-    <meta name="twitter:description" content="Discover and review delicious recipes.">
-    <meta name="twitter:image" content="https://example.com/social-preview-image.png">
+    <!-- X Card -->
+    <meta name="twitter:card" content="Social Preview Image">
+    <meta name="twitter:title" content="Your Title">
+    <meta name="twitter:description" content="Your Description">
+    <meta name="twitter:image" content="social-preview-image.png">
 
+    <!-- One favicon (ICO works everywhere) -->
     <link rel="icon" href="/favicon.ico">
+
+    <!-- One Apple Touch Icon (iOS home screen) -->
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
     <link rel="stylesheet" href="styles.css">
+    <title>Recipe Review</title>
 </head>
 
 <body>
-    <header>
-        <img id="recipe-book" src="assets/recipe-book.png" alt="Recipe book logo">
+    <img
+        id="recipe-book"
+        src="assets/recipe-book.png"
+        alt="Recipe book logo"
+    >
 
-        <h1>Recipe Review</h1>
+    <div class="search">
+        <input
+            id="searchbar"
+            name="searchbar"
+            type="text"
+            placeholder="Find a recipe"
+            aria-label="Search for a recipe"
+        >
 
-        <form class="search" role="search" aria-label="Search recipes">
-            <label for="searchbar" class="visually-hidden">
-                Search for a recipe
-            </label>
+        <img
+            src="assets/search.png"
+            alt=""
+            aria-hidden="true"
+        >
+    </div>
 
-            <input id="searchbar" name="searchbar" type="search" placeholder="Find a recipe">
+    <hr>
 
-            <button type="submit" aria-label="Search">
-                <img src="assets/search.png" alt="">
+    <div class="recipe">
+        <!-- Add recipe image, name, stars, and description, which will be hidden on small screens -->
+        <!-- Add aria labels at the end -->
+
+        <img
+            src="assets/apple-crisp.jpg"
+            alt="Apple crisp served with vanilla ice cream"
+        >
+
+        <div class="metadata">
+            <button aria-label="Recipe category: Dessert">
+                Dessert
             </button>
-        </form>
-    </header>
 
-    <main>
-        <article class="recipe" aria-labelledby="recipe-title">
-            <img src="assets/apple-crisp.jpg" alt="Apple crisp topped with vanilla ice cream">
+            <h2 id="recipe-title">Apple Crisp</h2>
 
-            <div class="metadata">
-                <span class="category">Dessert</span>
+            <span
+                class="rating"
+                role="img"
+                aria-label="Rating: 4 out of 5 stars"
+            >
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">☆</span>
+            </span>
 
-                <h2 id="recipe-title">Apple Crisp</h2>
-
-                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                    <span aria-hidden="true">⭐</span>
-                    <span aria-hidden="true">⭐</span>
-                    <span aria-hidden="true">⭐</span>
-                    <span aria-hidden="true">⭐</span>
-                    <span aria-hidden="true">☆</span>
-                </span>
-
-                <p id="description">
-                    This apple crisp recipe is a simple but delicious fall
-                    dessert that's great served warm with vanilla ice cream.
-                </p>
-            </div>
-        </article>
-    </main>
-
-    <footer>
-        <div class="social">
-            <a href="#" aria-label="Instagram">
-                <img src="assets/insta.png" alt="">
-            </a>
-
-            <a href="#" aria-label="YouTube">
-                <img src="assets/youtube.png" alt="">
-            </a>
-
-            <a href="#" aria-label="Pinterest">
-                <img src="assets/pinterest.png" alt="">
-            </a>
+            <p id="description" hidden="true">
+                This apple crisp recipe is a simple but delicious fall dessert
+                that's great served warm with vanilla ice cream
+            </p>
         </div>
-
-        <a href="https://www.flaticon.com/free-icons/recipe">
-            Recipe icons created by Freepik - Flaticon
-        </a>
-    </footer>
+    </div>
 </body>
+
+<footer>
+    <div class="social">
+        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates -->
+
+        <a href="#" aria-label="Instagram">
+            <img src="assets/insta.png" alt="">
+        </a>
+
+        <a href="#" aria-label="YouTube">
+            <img src="assets/youtube.png" alt="">
+        </a>
+
+        <a href="#" aria-label="Pinterest">
+            <img src="assets/pinterest.png" alt="">
+        </a>
+    </div>
+
+    <a
+        href="https://www.flaticon.com/free-icons/recipe"
+        title="recipe icons"
+    >
+        Recipe icons created by Freepik - Flaticon
+    </a>
+</footer>
 
 </html>
