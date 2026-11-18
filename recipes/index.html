@@ -25,6 +25,7 @@
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
     <link rel="stylesheet" href="styles.css">
+    <script src="recipes.js" defer></script>
     <title>Recipe Review</title>
 </head>
 
@@ -44,23 +45,24 @@
             aria-label="Search for a recipe"
         >
 
-        <img
-            src="assets/search.png"
-            alt=""
-            aria-hidden="true"
-        >
+        <button id="search-button">
+            <img
+                src="assets/search.png"
+                alt=""
+                aria-hidden="true"
+            >
+        </button>
     </div>
 
     <hr>
 
-    <div class="recipe">
+    <div class="recipe-results">
         <!-- Add recipe image, name, stars, and description, which will be hidden on small screens -->
-        <!-- Add aria labels at the end -->
-
-        <img
-            src="assets/apple-crisp.jpg"
-            alt="Apple crisp served with vanilla ice cream"
-        >
+        <!-- Add aria labels at the end -->   
+            <!-- <img
+        src="assets/apple-crisp.jpg"
+        alt="Apple crisp served with vanilla ice cream"
+    >
 
         <div class="metadata">
             <button aria-label="Recipe category: Dessert">
@@ -85,7 +87,7 @@
                 This apple crisp recipe is a simple but delicious fall dessert
                 that's great served warm with vanilla ice cream
             </p>
-        </div>
+        </div>      -->
     </div>
 </body>
 

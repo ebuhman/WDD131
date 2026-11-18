@@ -14,24 +14,39 @@ body {
 .search {
     width: 80%;
     max-width: 900px;
+    height: 50px;
+    max-height: 100px;
 
     display: flex;
     border: 1px solid black;
     border-radius: 8px;
-    height: 50px;
-    max-height: 100px;
-}
-
-.search img {
-    width: auto;
-    height: auto;
-    margin-left: auto;
-    padding-left: 10px;
-    border-left: 1px solid black;
+    overflow: hidden;
 }
 
 .search input {
     flex: 1;
+    border: none;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+.search button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 12px;
+    border: none;
+    border-left: 1px solid black;
+    background: white;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
     border: none;
 }
 
@@ -82,7 +97,7 @@ footer {
 @media screen and (max-width: 600px) {
     #description {
         display: none;
-    }   
+    }
 
     .recipe {
         flex-direction: column;
