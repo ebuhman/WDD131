@@ -342,6 +342,9 @@ searchButton.addEventListener("click", () => {
     }
 });
 
-searchBar.value = "Apple Crisp";
+const randomIndex = Math.floor(Math.random() * recipes.length);
+const randomRecipe = recipes[randomIndex];
+
+searchBar.value = randomRecipe.name;
 searchButton.click();
 searchBar.value = "";
